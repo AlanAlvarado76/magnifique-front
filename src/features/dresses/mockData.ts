@@ -24,6 +24,7 @@ export const MOCK_DRESSES: Dress[] = [
     rentalPrice: 1500,
     salePrice: 4500,
     images: [vestido1],
+    sizes: [{ size: 'M', available: true }],
   },
   {
     _id: '2',
@@ -31,6 +32,7 @@ export const MOCK_DRESSES: Dress[] = [
     description: 'Ligero vestido de coctel color pastel, ideal para jardín.',
     rentalPrice: 1200,
     images: [vestido2],
+    sizes: [{ size: 'M', available: true }],
   },
   {
     _id: '3',
@@ -39,6 +41,7 @@ export const MOCK_DRESSES: Dress[] = [
     rentalPrice: 1800,
     salePrice: 5000,
     images: [vestido3],
+    sizes: [{ size: 'M', available: true }],
   },
   {
     _id: '4',
@@ -46,6 +49,7 @@ export const MOCK_DRESSES: Dress[] = [
     description: 'Vestido corto y fresco para graduación.',
     rentalPrice: 900,
     images: [v3],
+    sizes: [{ size: 'M', available: true }],
   },
   {
     _id: '5',
@@ -53,6 +57,7 @@ export const MOCK_DRESSES: Dress[] = [
     description: 'Vestido corto y fresco para graduación.',
     rentalPrice: 900,
     images: [v08, v008],
+    sizes: [{ size: 'M', available: true }],
   },
   {
     _id: '6',
@@ -60,6 +65,7 @@ export const MOCK_DRESSES: Dress[] = [
     description: 'Vestido corto y fresco para graduación.',
     rentalPrice: 900,
     images: [v026],
+    sizes: [{ size: 'M', available: true }],
   },
   {
     _id: '7',
@@ -67,6 +73,7 @@ export const MOCK_DRESSES: Dress[] = [
     description: 'Vestido corto y fresco para graduación.',
     rentalPrice: 900,
     images: [v013],
+    sizes: [{ size: 'M', available: true }],
   },
   {
     _id: '8',
@@ -74,6 +81,7 @@ export const MOCK_DRESSES: Dress[] = [
     description: 'Vestido corto y fresco para graduación.',
     rentalPrice: 900,
     images: [v012],
+    sizes: [{ size: 'M', available: true }],
   },
   {
     _id: '9',
@@ -81,5 +89,6 @@ export const MOCK_DRESSES: Dress[] = [
     description: 'Vestido corto y fresco para graduación.',
     rentalPrice: 900,
     images: [v023],
+    sizes: [{ size: 'M', available: true }],
   },
 ];
