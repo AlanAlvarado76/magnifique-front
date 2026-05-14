@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 import { useScrollDirection } from '../../hooks/useScrollDirection';
+import logoMg from '../../assets/images/Logo-mg.png';
 
 const Header: React.FC = () => {
   const scrollDirection = useScrollDirection();
@@ -13,7 +14,7 @@ const Header: React.FC = () => {
       <div className={styles.topRow}>
         
         <div className={styles.logoContainer}>
-          <img src="src/assets/images/Logo-mg.png" alt="Logo" className={styles.logoImage} />
+          <img src={logoMg} alt="Logo" className={styles.logoImage} />
         </div>
 
         <div className={styles.logo}>

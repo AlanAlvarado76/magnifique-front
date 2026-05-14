@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from './HomePage.module.css';
+import inicioImg from '../../assets/images/inicio.jpg';
+import v1Img from '../../assets/images/v1.png';
+import v2Img from '../../assets/images/v2.png';
+import v3Img from '../../assets/images/v3.png';
 
 const HomePage: React.FC = () => {
   return (
     <div className={styles.homeContainer}>
       {/* Sección 1: Hero Section (Galería de Imágenes) */}
-      <img src="src/assets/images/inicio.jpg" alt="Imagen principal"className={styles.heroImage}/>
+      <img src={inicioImg} alt="Imagen principal"className={styles.heroImage}/>
       
 
       {/* Sección de introducción o llamados a la acción (puedes añadirla si quieres texto después del hero) */}
@@ -19,9 +23,9 @@ const HomePage: React.FC = () => {
       <section className={styles.featuredSection}>
         <h2>Novedades y Diseños Exclusivos</h2>
         <div className={styles.grid}>
-            <img src="src/assets/images/v1.png" alt="Imagen vestido1" className={styles.gridItem}/>
-            <img src="src/assets/images/v2.png" alt="Imagen vestido2" className={styles.gridItem}/>
-            <img src="src/assets/images/v3.png" alt="Imagen vestido3" className={styles.gridItem}/>
+            <img src={v1Img} alt="Imagen vestido1" className={styles.gridItem}/>
+            <img src={v2Img} alt="Imagen vestido2" className={styles.gridItem}/>
+            <img src={v3Img} alt="Imagen vestido3" className={styles.gridItem}/>
         </div>
       </section>
 
