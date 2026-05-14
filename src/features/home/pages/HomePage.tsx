@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './HomePage.module.css';
-import inicioImg from '../../assets/images/inicio.jpg';
-import v1Img from '../../assets/images/v1.png';
-import v2Img from '../../assets/images/v2.png';
-import v3Img from '../../assets/images/v3.png';
+import inicioImg from '@/assets/images/inicio.jpg';
+import v1Img from '@/assets/images/v1.png';
+import v2Img from '@/assets/images/v2.png';
+import v3Img from '@/assets/images/v3.png';
 
 const HomePage: React.FC = () => {
   return (

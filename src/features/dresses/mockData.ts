@@ -2,17 +2,16 @@
 import type { Dress } from '@/features/dresses/types/Dress';
 
 // --- 1. IMPORTA TUS IMÁGENES CON LA EXTENSIÓN .png ---
-// ../../ sube dos niveles (de 'dresses' a 'features', y de 'features' a 'src')
-import vestido1 from '../../assets/images/vestido1.png'; // 👈 CAMBIO: .png
-import vestido2 from '../../assets/images/vestido2.png'; // 👈 CAMBIO: .png
-import vestido3 from '../../assets/images/vestido3.png'; // 👈 CAMBIO: .png
-import v08 from '../../assets/images/v08.png';       // 👈 CAMBIO: .png
-import v012 from '../../assets/images/v012.png'; 
-import v013 from '../../assets/images/v013.png'; 
-import v023 from '../../assets/images/v023.jpg'; 
-import v026 from '../../assets/images/v026.jpg'; 
-import v3 from '../../assets/images/v3.png'; 
-import v008 from '../../assets/images/v008.png'; 
+import vestido1 from '@/assets/images/vestido1.png'; 
+import vestido2 from '@/assets/images/vestido2.png'; 
+import vestido3 from '@/assets/images/vestido3.png'; 
+import v08 from '@/assets/images/v08.png';       
+import v012 from '@/assets/images/v012.png'; 
+import v013 from '@/assets/images/v013.png'; 
+import v023 from '@/assets/images/v023.jpg'; 
+import v026 from '@/assets/images/v026.jpg'; 
+import v3 from '@/assets/images/v3.png'; 
+import v008 from '@/assets/images/v008.png'; 
 
 
 // --- 2. USA LAS VARIABLES (esto ya estaba bien) ---

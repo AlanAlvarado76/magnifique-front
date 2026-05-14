@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 import { useScrollDirection } from '../../hooks/useScrollDirection';
-import logoMg from '../../assets/images/Logo-mg.png';
+import logoMg from '@/assets/images/Logo-mg.png';
 
 const Header: React.FC = () => {
   const scrollDirection = useScrollDirection();
