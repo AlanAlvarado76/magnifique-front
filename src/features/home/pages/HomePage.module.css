@@ -1,0 +1,116 @@
+/* src/pages/HomePage.module.css */
+
+.homeContainer {
+  width: 100%;
+  color: #333;
+}
+.heroImage {
+  width: 100%;
+  height: 100vh; /* ocupa toda la altura de la pantalla */
+  object-fit: cover; /* evita deformaciones */
+}
+
+/* Nueva sección de introducción o llamado a la acción */
+.introductionSection {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f8f8f8; /* Un fondo ligeramente diferente */
+    margin-bottom: 2rem;
+}
+
+.introductionSection h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.introductionSection p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+    color: #555;
+}
+.featuredSection {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.featuredSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+/* Contenedor de la cuadrícula */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  justify-items: center;
+}
+/* Cada imagen dentro de la cuadrícula */
+.gridItem {
+  width: 100%;
+  max-width: 200px; /* Tamaño máximo de cada imagen */
+  height: auto;
+  border-radius: 8px; /* Opcional: bordes redondeados */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gridItem:hover {
+  transform: scale(1.10); /* Pequeño efecto hover */
+}
+
+.ctaButton {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #000; /* Botón oscuro */
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ctaButton:hover {
+  background-color: #333;
+  border-color: #333;
+  transform: translateY(-2px);
+}
+
+
+/* Estilos para Featured y How It Works (pueden mantenerse o ajustarse) */
+.featuredSection, .howItWorksSection {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.featuredSection h2, .howItWorksSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex-basis: 300px;
+    padding: 1rem;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}

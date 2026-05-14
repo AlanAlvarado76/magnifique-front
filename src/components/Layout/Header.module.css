@@ -1,0 +1,106 @@
+/* src/components/Layout/Header.module.css */
+
+.header {
+  background-color: #111111; 
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  border-bottom: 0px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0.25rem 0; 
+  transition: transform 0.4s ease-in-out; 
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.logoContainer {
+  flex: 1; 
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.logoImage {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 10px;
+  transform: translateY(8px); 
+}
+
+.logo {
+  flex: 1; 
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+
+.spacer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: center; 
+  padding-top: 0.5rem; 
+   padding-bottom: 0.3rem;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover {
+  color: #aaa;
+}
+
+.header.hidden {
+  transform: translateY(-73%);
+}
+.loginButton {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(120, 120, 120);
+  padding: 0.5rem 1rem;
+  border: 1px solid #777;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: rgb(62, 62, 62);
+  color: #ffffff; 
+}

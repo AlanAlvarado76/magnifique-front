@@ -1,0 +1,164 @@
+.pageContainer {
+  max-width: 1000px; /* Más angosto que el catálogo para que parezca blog de lectura */
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2rem;
+}
+
+.title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* --- Lista de Posts --- */
+.blogList {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem; /* Mucho espacio entre posts */
+}
+
+.blogPost {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Alternar la dirección de cada post (imagen izq, imagen der) */
+.blogPost:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.imageWrapper {
+  flex: 1;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blogPost:hover .image {
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: white;
+  color: black;
+}
+
+.badge.activa { background-color: #d4edda; color: #155724; }
+.badge.proximamente { background-color: #fff3cd; color: #856404; }
+
+/* Contenido */
+.content {
+  flex: 1;
+}
+
+.meta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.postTitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 0;
+  color: #111;
+  line-height: 1.2;
+}
+
+.description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.couponContainer {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px dashed #ccc;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.code {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+  margin-top: 0.3rem;
+  letter-spacing: 2px;
+}
+
+.readMoreBtn {
+  display: inline-block;
+  color: #111;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  border-bottom: 2px solid #111;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.readMoreBtn:hover {
+  color: #555;
+  border-bottom-color: #555;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .blogPost, 
+  .blogPost:nth-child(even) {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .imageWrapper {
+    height: 300px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}

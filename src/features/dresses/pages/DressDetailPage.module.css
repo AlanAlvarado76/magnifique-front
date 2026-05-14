@@ -1,0 +1,139 @@
+/* src/features/dresses/pages/DressDetailPage.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  color: #ccc; /* Asumiendo fondo oscuro global */
+}
+
+.layout {
+  display: flex;
+  gap: 2rem;
+}
+
+/* --- Lado Izquierdo: Galería --- */
+.galleryWrapper {
+  flex: 1; /* Ocupa la mitad del espacio */
+  /* El componente de galería se ajustará solo */
+}
+
+/* --- Lado Derecho: Detalles --- */
+.detailsWrapper {
+  flex: 1; /* Ocupa la otra mitad */
+  padding: 0 1rem;
+}
+
+.name {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  margin-top: 0;
+  color: rgb(0, 0, 0);
+}
+
+.price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+.detailsTitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #323232;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #393939;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #474747;
+}
+
+.ctaButton {
+  background-color: #181818;
+  color: #eee;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #ccc;
+  color: #323232;
+}
+
+/* --- Media Query para pantallas pequeñas --- */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column; /* Apila la galería y los detalles */
+  }
+}
+/* src/features/dresses/pages/DressDetailPage.module.css */
+
+/* ... tus estilos anteriores ... */
+
+/* --- Botón de Regresar --- */
+.backButton {
+  background: none;
+  border: none;
+  color: #323232; /* Color sutil */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem; /* Espacio antes del contenido */
+  padding: 0;
+  transition: color 0.3s ease;
+  margin-left: none;
+}
+
+.backButton:hover {
+  color: white; /* Resalta al pasar el mouse */
+}
+
+/* --- Botones Minimalistas del Carrusel --- */
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.2); /* Fondo semi-transparente muy sutil */
+  color: white;
+  border: none;
+  font-size: 1.5rem; /* Tamaño pequeño */
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 4; /* Encima de la imagen */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.navBtn:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* Más oscuro al hover */
+}
+
+.navBtnLeft {
+  left: 10px;
+}
+
+.navBtnRight {
+  right: 10px;
+}

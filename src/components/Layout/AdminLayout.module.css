@@ -1,0 +1,11 @@
+.adminContainer {
+  display: flex;
+}
+
+.contentArea {
+  margin-left: 260px; 
+  width: calc(100% - 260px);
+  min-height: 100vh;
+  background-color: #f4f4f4; 
+  padding: 2rem;
+}

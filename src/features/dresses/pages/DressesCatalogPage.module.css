@@ -1,0 +1,91 @@
+/* src/features/dresses/pages/DressesCatalogPage.module.css */
+
+/* --- Estilos de la Página --- */
+.pageContainer {
+  max-width: 1600px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.catalogLayout {
+  display: flex;
+  gap: 2rem;
+}
+
+.grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+
+  /* 👇 ESTO ES LO QUE TE FALTA */
+  align-items: start;
+}
+/* ... (tus estilos anteriores de .pageContainer, .grid, etc. se quedan igual) ... */
+
+/* --- PAGINACIÓN --- */
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.pageButton {
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  
+  /* Centrar texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageButton:hover:not(:disabled) {
+  border-color: #333;
+  color: #000;
+  background-color: #fafafa;
+}
+
+.activePage {
+  background-color: #111;
+  color: white;
+  border-color: #111;
+  font-weight: 600;
+}
+
+/* Estado cuando el botón (Anterior/Siguiente) está deshabilitado */
+.pageButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  background-color: #f5f5f5;
+  border-color: #eee;
+}
+
+/* Botones de Anterior/Siguiente un poco más anchos */
+.navButton {
+  padding: 0 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}

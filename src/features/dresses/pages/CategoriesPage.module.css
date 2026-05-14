@@ -1,0 +1,144 @@
+/* Contenedor principal */
+.pageContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+}
+
+/* Encabezado de la página */
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #fff; /* Asumiendo fondo negro de la web, si es blanco usa #111 */
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  color: #888;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* La Cuadrícula (Grid) */
+.grid {
+  display: grid;
+  /* Crea columnas automáticas, mínimo 300px de ancho */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* --- ESTILO DE LA TARJETA (CARD) --- */
+.card {
+  position: relative;
+  height: 500px; /* Altura fija para que se vean uniformes */
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contenedor de la imagen */
+.imageWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta la imagen para llenar el espacio */
+  transition: transform 0.6s ease; /* Animación de zoom suave */
+}
+
+/* Efecto Zoom al hacer Hover */
+.card:hover .image {
+  transform: scale(1.1);
+}
+
+/* --- TEXTO DE LA TARJETA --- */
+/* Gradiente negro en la parte inferior para que el texto se lea */
+.cardContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  color: white;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.categoryName {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.exploreLink {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+/* --- OVERLAY CON DESCRIPCIÓN (Aparece al hover) --- */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Capa oscura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Invisible por defecto */
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.description {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+/* Animación al hacer Hover */
+.card:hover .overlay {
+  opacity: 1; /* Aparece la capa oscura */
+}
+
+.card:hover .description {
+  transform: translateY(0); /* Sube el texto */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .card {
+    height: 400px;
+  }
+}

@@ -1,0 +1,27 @@
+/* src/index.css */
+
+/* Importa la fuente que elegimos (opcional si ya está en index.html) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Regla fundamental: Asegura que el padding y el borde se incluyan 
+  en el ancho y alto total del elemento. ¡No la borres!
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /* <-- MUY IMPORTANTE: Elimina el margen por defecto del navegador */
+  font-family: 'Montserrat', sans-serif; /* Establece nuestra fuente por defecto */
+  background-color: #f4f4f4; /* <-- Opcional: Ponemos un fondo oscuro por defecto para toda la app */
+  /* Si prefieres un fondo blanco, usa background-color: #FFFFFF; */
+}

@@ -1,0 +1,172 @@
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #333;
+}
+
+/* --- Header --- */
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* --- Layout Principal --- */
+.contentWrapper {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  flex-wrap: wrap; /* previene bugs cuando algo crece */
+}
+
+/* --- Sección de Información --- */
+.infoSection {
+  flex: 1;
+  padding-right: 2rem;
+  border-right: 1px solid #eee;
+}
+
+.infoBlock {
+  margin-bottom: 3rem;
+}
+
+.infoBlock h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #111;
+}
+
+.infoBlock p {
+  font-family: 'Montserrat', sans-serif;
+  color: #555;
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+/* --- Formulario --- */
+.formSection {
+  flex: 1.5;
+}
+
+.form {
+  background-color: #fcfcfc;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: #111;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.submitButton {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #333;
+}
+
+/* --- Mapa --- */
+.mapContainer {
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 10px;
+  overflow: hidden; /* redondeo también para iframe */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.mapContainer iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+/* Responsividad */
+@media (max-width: 900px) {
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .contentWrapper {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentWrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .infoSection {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .form {
+    padding: 1.5rem;
+  }
+}
